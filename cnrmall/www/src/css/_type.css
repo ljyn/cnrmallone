@@ -1,0 +1,68 @@
+.banner {
+  height: 382px;
+  width: 100%;
+}
+.banner .w {
+  height: 382px;
+  position: relative;
+}
+
+.banner-left {
+  width: 200px;
+  height: 383px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.banner-left .banleft-top {
+  width: 200px;
+  height: 210px;
+  overflow: hidden;
+  background: url(../img/n_92.jpg) 0px -38px no-repeat;
+}
+.banner-left .banleft-bottom {
+  width: 200px;
+  height: 174px;
+  background: url(../img/n_104.jpg) no-repeat top left;
+}
+
+.banleft-top a {
+  display: inline-block;
+  height: 90px;
+  width: 90px;
+  padding: 5px 3px;
+}
+.banleft-top a div {
+  width: 90px;
+  height: 90px;
+}
+.banleft-top a:hover .imgone {
+  background: url(../img/n_99.jpg) no-repeat center;
+}
+.banleft-top a:hover .imgtwo {
+  background: url(../img/n_101.jpg) no-repeat center;
+}
+.banleft-top a:hover .imgthree {
+  background: url(../img/n_102.jpg) no-repeat center;
+}
+.banleft-top a:hover .imgfour {
+  background: url(../img/wx_icon_hover.jpg) no-repeat center;
+}
+
+.imgone {
+  background: url(../img/n_95.jpg) no-repeat center;
+}
+
+.imgtwo {
+  background: url(../img/n_96.jpg) no-repeat center;
+}
+
+.imgthree {
+  background: url(../img/n_97.jpg) no-repeat center;
+}
+
+.imgfour {
+  background: url(../img/wx_icon.jpg) no-repeat center;
+}
+
+/*# sourceMappingURL=_type.css.map */
