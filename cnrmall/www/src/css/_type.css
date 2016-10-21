@@ -1,18 +1,23 @@
 .banner {
   height: 382px;
   width: 100%;
-}
-.banner .w {
-  height: 382px;
   position: relative;
+}
+.banner ul {
+  width: 100%;
+  height: 382px;
+}
+.banner ul li {
+  width: 100%;
+  height: 382px;
 }
 
 .banner-left {
   width: 200px;
-  height: 383px;
+  height: 382px;
   position: absolute;
   top: 0;
-  left: 0;
+  left: 200px;
 }
 .banner-left .banleft-top {
   width: 200px;
@@ -63,6 +68,422 @@
 
 .imgfour {
   background: url(../img/wx_icon.jpg) no-repeat center;
+}
+
+.banleft-bottom {
+  height: 174px;
+  padding-top: 10px;
+  width: 200px;
+}
+.banleft-bottom dt {
+  height: 135px;
+  width: 185px;
+  padding-left: 15px;
+}
+.banleft-bottom dd {
+  width: 200px;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.cont {
+  height: 540px;
+  padding: 10px 0 13px 0;
+  width: 100%;
+}
+.cont .w {
+  height: 540px;
+}
+
+.cont-left {
+  width: 721px;
+  height: 550px;
+}
+.cont-left .tvlive {
+  width: 721px;
+  height: 256px;
+  padding-bottom: 10px;
+  background: url(../img/n_63.jpg) no-repeat bottom;
+}
+.cont-left .hotshop {
+  width: 721px;
+  height: 271px;
+}
+
+.tvlive-top {
+  width: 721px;
+  height: 30px;
+  background: url(../img/n_201411.jpg) no-repeat left;
+}
+.tvlive-top p {
+  height: 30px;
+  line-height: 30px;
+}
+.tvlive-top p a span img {
+  padding-top: 7px;
+}
+
+.tvlive-bottom {
+  height: 226px;
+  width: 721px;
+}
+.tvlive-bottom .tvbt-left {
+  width: 272px;
+  height: 188px;
+  padding-top: 29px;
+  padding-right: 10px;
+}
+
+.hotshop-top {
+  width: 721px;
+  height: 28px;
+  background: url(../img/hot-title.jpg) no-repeat left;
+}
+
+.hotshop-bottom {
+  padding-top: 10px;
+  width: 721px;
+  height: 233px;
+}
+.hotshop-bottom dl {
+  border: 1px solid #CCCCCC;
+  margin: 0 4px;
+  width: 132px;
+  height: 233px;
+}
+.hotshop-bottom dl dt {
+  position: relative;
+}
+.hotshop-bottom dl dt span {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.hotshop-bottom dl dd {
+  padding-top: 17px;
+  width: 132px;
+  height: 40px;
+  text-align: center;
+}
+.hotshop-bottom dl dd span {
+  color: #C9302C;
+}
+
+.cont-right {
+  width: 264px;
+  height: 550px;
+}
+.cont-right .newthing {
+  width: 264px;
+  height: 256px;
+  margin-bottom: 10px;
+  background: url(../img/n_88.jpg) no-repeat center;
+}
+.cont-right .newthing h3 {
+  height: 40px;
+  line-height: 40px;
+  width: 264px;
+  text-align: center;
+  color: #ed4552;
+}
+.cont-right .newthing h3 span {
+  color: #000000;
+}
+.cont-right .newact {
+  width: 264px;
+  height: 271px;
+  background: url(../img/n_88-1.jpg) no-repeat top;
+}
+.cont-right .newact h3 {
+  height: 40px;
+  line-height: 40px;
+  width: 264px;
+  text-align: center;
+  color: #ed4552;
+}
+.cont-right .newact h3 span {
+  color: #000000;
+}
+.cont-right .newact .actban {
+  height: 231px;
+  width: 235px;
+  overflow: hidden;
+  margin-left: 14px;
+  position: relative;
+}
+
+.willhid {
+  padding: 0 12px;
+  width: 240px;
+  height: 27px;
+  line-height: 27px;
+}
+.willhid p {
+  width: 140px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.willhid span {
+  color: #ED4552;
+}
+
+.willshow {
+  width: 240px;
+  padding: 14px 12px 0;
+  height: 75px;
+  display: none;
+  background: url(../img/wtf-n_89.jpg) no-repeat top;
+}
+.willshow p {
+  width: 140px;
+  height: 20px;
+  line-height: 20px;
+  padding-bottom: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.willshow p strong {
+  color: #ED4552;
+  font-size: 20px;
+}
+.willshow strong {
+  color: #ED4552;
+}
+
+.actban-big {
+  position: absolute;
+  width: 235px;
+  height: 231px;
+}
+.actban-big li {
+  width: 235px;
+  height: 231px;
+  text-align: center;
+}
+
+.actban-small {
+  position: absolute;
+  top: 200px;
+  left: 155px;
+}
+.actban-small .turn {
+  width: 20px;
+  margin-left: 2px;
+  height: 5px;
+  background-color: #C0C0C0;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+  border-radius: 2px;
+}
+
+.membercenter {
+  width: 100%;
+  height: 416px;
+}
+.membercenter .w {
+  background-color: #f6e9d5;
+  height: 416px;
+}
+.membercenter .w h2 {
+  width: 996px;
+  color: #ED4552;
+  height: 33px;
+  line-height: 33px;
+  padding-left: 4px;
+}
+.membercenter .w h2 span {
+  font-size: 12px;
+  font-weight: 100;
+  color: #000000;
+  line-height: 25px;
+}
+.membercenter .w .memmid {
+  height: 253px;
+  width: 1000px;
+  background: url(../img/n_201415.gif) no-repeat center;
+}
+.membercenter .w .membot {
+  height: 130px;
+  width: 1000px;
+  background: url(../img/n_201416.jpg) no-repeat 10px center;
+}
+
+.memmid-left {
+  height: 253px;
+  width: 720px;
+}
+.memmid-left .memtabone {
+  width: 202px;
+  height: 200px;
+  padding-top: 25px;
+  padding-left: 20px;
+}
+.memmid-left .memtabtwo {
+  width: 450px;
+  height: 230px;
+  padding-top: 15px;
+  overflow: hidden;
+}
+.memmid-left .memtabtwo li {
+  display: none;
+  width: 470px;
+  height: 230px;
+}
+
+.memtabone li {
+  width: 60px;
+  height: 60px;
+  border: 2px solid #f8f4f2;
+  margin-right: 2px;
+}
+
+.detail {
+  width: 130px;
+  height: 180px;
+  padding-top: 35px;
+}
+.detail a {
+  font-weight: bold;
+  color: #0F0F0F;
+}
+
+.comment {
+  height: 215px;
+  width: 305px;
+  position: relative;
+  padding-left: 15px;
+}
+.comment dl {
+  padding-top: 20px;
+  width: 305px;
+  height: 35px;
+}
+.comment dl dt {
+  width: 35px;
+  height: 35px;
+}
+.comment dl dd {
+  width: 260px;
+  height: 35px;
+  position: relative;
+}
+.comment dl dd span {
+  position: absolute;
+  top: 15px;
+  left: 120px;
+  width: 60px;
+  height: 12px;
+  background: url(../img/redstar.jpg) repeat-x;
+}
+.comment p {
+  height: 36px;
+  width: 305px;
+  line-height: 20px;
+}
+.comment .bor {
+  width: 305px;
+  height: 0px;
+  border-top: 1px dashed #666666;
+}
+.comment .morecom {
+  position: absolute;
+  top: 180px;
+  left: 185px;
+}
+
+.memmid-right {
+  width: 220px;
+  height: 180px;
+  padding-top: 50px;
+  padding-right: 30px;
+}
+.memmid-right h4 {
+  color: #ED4552;
+  width: 220px;
+  text-align: center;
+  height: 38px;
+  line-height: 38px;
+}
+
+.updown {
+  height: 140px;
+  width: 220px;
+  overflow: hidden;
+}
+.updown li {
+  position: relative;
+  height: 20px;
+  padding-left: 5px;
+  line-height: 20px;
+}
+.updown li span {
+  position: absolute;
+  left: 85px;
+  top: 0;
+}
+
+.membot-left {
+  height: 122px;
+  width: 260px;
+  padding-left: 90px;
+  border-right: 1px dashed #CCCCCC;
+}
+.membot-left dt {
+  width: 84px;
+  height: 110px;
+  border: 2px solid #CCCCCC;
+}
+.membot-left dd {
+  width: 156px;
+  height: 105px;
+  padding-left: 9px;
+}
+.membot-left dd p {
+  line-height: 23px;
+}
+.membot-left dd p b {
+  color: #ED4552;
+}
+.membot-left dd span a img {
+  padding-left: 40px;
+  padding-top: 15px;
+}
+
+.membot-center {
+  width: 210px;
+  height: 122px;
+  padding: 0 5px;
+  border-right: 1px dashed #CCCCCC;
+}
+.membot-center h4 {
+  width: 210px;
+  height: 24px;
+  line-height: 24px;
+  border-bottom: 1px dashed #CCCCCC;
+}
+.membot-center li {
+  line-height: 22px;
+}
+
+.membot-right {
+  width: 408px;
+  height: 120px;
+}
+.membot-right dl {
+  width: 101px;
+  text-align: center;
+  height: 120px;
+  border-right: 1px dashed #CCCCCC;
+}
+.membot-right dl dt img {
+  padding-left: 28px;
+}
+.membot-right dl dd a {
+  font-size: 12px;
+  line-height: 19px;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=_type.css.map */

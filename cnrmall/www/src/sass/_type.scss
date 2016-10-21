@@ -1,17 +1,22 @@
 .banner{
     height: 382px;
     width:100%;
-    .w{
-        height:382px;
-        position: relative;
+    position: relative;
+    ul{
+        width: 100%;
+        height: 382px;
+        li{
+            width:100%;
+            height: 382px;
+        }
     }
 }
 .banner-left{
-    width:200px ;
-    height: 383px;
+    width:200px;
+    height: 382px;
     position: absolute;
     top:0;
-    left:0;
+    left:200px;
     
     .banleft-top{
         width: 200px;
@@ -60,6 +65,413 @@
 }
 .imgfour{
     background: url(../img/wx_icon.jpg) no-repeat center;
+}
+.banleft-bottom{
+    height:174px;
+    padding-top:10px;
+    width:200px;
+    dt{
+        height:135px;
+        width:185px;
+        padding-left:15px;
+    }
+    dd{
+        width: 200px;
+        text-align: center;
+        padding-top:5px;
+    }
+}
+
+.cont{
+    height: 540px;
+    padding:10px 0 13px 0;
+    width:100%;
+    .w{
+        height: 540px;
+    }
+}
+.cont-left{
+    width:721px;
+    height: 550px;
+    .tvlive{
+        width:721px;
+        height:256px;
+        padding-bottom: 10px;
+        background: url(../img/n_63.jpg) no-repeat bottom;
+    }
+    .hotshop{
+        width: 721px;
+        height: 271px;
+    }
+}
+.tvlive-top{
+    width: 721px;
+    height:30px;
+    background: url(../img/n_201411.jpg) no-repeat left;
+    p{
+        height: 30px;
+        line-height: 30px;
+        a span img{
+            padding-top:7px;
+        }
+    }
+}
+.tvlive-bottom{
+    height: 226px;
+    width: 721px;
+    .tvbt-left{
+        width: 272px;
+        height:188px;
+        padding-top:29px;
+        padding-right: 10px;
+    }
+    .tvtab{
+        
+        
+        
+    }
+}
+
+.hotshop-top{
+    width: 721px;
+    height: 28px;
+    background: url(../img/hot-title.jpg) no-repeat left;
+}
+.hotshop-bottom{
+    padding-top: 10px;
+    width: 721px;
+    height: 233px;
+    dl{
+        border:1px solid #CCCCCC;
+        margin:0 4px;
+        width: 132px;
+        height:233px;
+        dt{
+            position: relative;
+            span{
+                position: absolute;
+                top:0;
+                left:0;
+            }
+        }
+        dd{
+            padding-top:17px;
+            width:132px;
+            height: 40px;
+            text-align: center;
+            span{
+                color: #C9302C;
+            }
+        }
+    }
+}
+.cont-right{
+    width:264px;
+    height: 550px;
+    .newthing{
+        width: 264px;
+        height: 256px;
+        margin-bottom: 10px;
+        background: url(../img/n_88.jpg) no-repeat center;
+        h3{
+            height: 40px;
+            line-height: 40px;
+            width: 264px;
+            text-align: center;
+            color: #ed4552;
+            span{
+                color: #000000;
+            }
+        }
+    }
+    .newact{
+        width:264px;
+        height: 271px;
+        background: url(../img/n_88-1.jpg) no-repeat top;
+        h3{
+            height: 40px;
+            line-height: 40px;
+            width: 264px;
+            text-align: center;
+            color: #ed4552;
+            span{
+                color: #000000;
+            }
+        }
+        .actban{
+            height: 231px;
+            width: 235px;
+            overflow: hidden;
+            margin-left: 14px;
+            position: relative;
+        }
+    }
+}
+.willhid{
+    padding: 0 12px;
+    width:240px;
+    height: 27px;
+    line-height: 27px;
+    p{
+        width:140px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    span{
+        color: #ED4552;
+    }
+}
+.willshow{
+    width:240px;
+    padding:14px 12px 0;
+    height: 75px;
+    display: none;
+    background: url(../img/wtf-n_89.jpg) no-repeat top;
+    p{
+        width: 140px;
+        height:20px;
+        line-height: 20px;
+        padding-bottom: 15px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        strong{
+            color: #ED4552;
+            font-size:20px;
+        }
+    }
+    strong{
+        color: #ED4552;
+    }
+}
+.actban-big{
+    position: absolute;
+    width:235px;
+    height:231px;
+    li{
+        width:235px;
+        height: 231px;
+        text-align: center;
+    }
+}
+.actban-small{
+    position: absolute;
+    top:200px;
+    left:155px;
+    .turn{
+        width:20px;
+        margin-left:2px;
+        height: 5px;
+        background-color: #C0C0C0;
+        opacity: 0.8;
+        filter: alpha(opacity=80);
+        border-radius: 2px;
+    }
+}
+
+.membercenter{
+    width: 100%;
+    height: 416px;
+    .w{
+        background-color: #f6e9d5;
+        height: 416px;
+        h2{
+            width: 996px;
+            color: #ED4552;
+            height: 33px;
+            line-height: 33px;
+            padding-left: 4px;
+            span{
+                font-size:12px;
+                font-weight: 100;
+                color: #000000;
+                line-height: 25px;
+            }
+        }
+        .memmid{
+            height: 253px;
+            width: 1000px;
+            background: url(../img/n_201415.gif) no-repeat center;
+        }
+        .membot{
+            height: 130px;
+            width:1000px;
+            background: url(../img/n_201416.jpg) no-repeat 10px center;
+        }
+    }
+}
+.memmid-left{
+    height: 253px;
+    width: 720px;
+    .memtabone{
+        width: 202px;
+        height: 200px;
+        padding-top:25px;
+        padding-left:20px; 
+    }
+    .memtabtwo{
+        width:450px;
+        height: 230px;
+        padding-top:15px;
+        overflow: hidden;
+        li{
+            display: none;
+            width: 470px;
+            height: 230px;
+        }
+    }
+}
+.memtabone{
+    li{
+        width:60px;
+        height:60px;
+        border:2px solid #f8f4f2;
+        margin-right: 2px;
+    }    
+}
+
+.detail{
+    width:130px;
+    height:180px;
+    padding-top: 35px;
+    a{
+        font-weight: bold;
+        color: #0F0F0F;
+    }
+}
+.comment{
+    height:215px;
+    width:305px;
+    position: relative;
+    padding-left:15px;
+    dl{
+        padding-top:20px;
+        width: 305px;
+        height:35px;
+        dt{
+            width:35px;
+            height: 35px;
+        }
+        dd{
+            width: 260px;
+            height: 35px;
+            position: relative;
+            span{
+                position: absolute;
+                top:15px;
+                left:120px;
+                width:60px ;
+                height:12px;
+                background: url(../img/redstar.jpg) repeat-x;
+            }
+        }
+    }
+    
+    p{
+        height:36px;
+        width: 305px;
+        line-height: 20px;
+    }
+    .bor{
+        width:305px;
+        height:0px;
+        border-top:1px dashed #666666;
+        
+    }
+    .morecom{
+        position: absolute;
+        top:180px;
+        left:185px;
+    }
+}
+.memmid-right{
+    width: 220px;
+    height: 180px;
+    padding-top: 50px;
+    padding-right: 30px;
+    h4{
+        color: #ED4552;
+        width: 220px;
+        text-align: center;
+        height: 38px;
+        line-height: 38px;
+    }
+}
+.updown{
+    height: 140px;
+    width: 220px;
+    overflow: hidden;
+    li{
+        position: relative;
+        height: 20px;
+        padding-left:5px;
+        line-height: 20px;
+        span{
+            position: absolute;
+            left:85px;
+            top:0;
+        }
+    }
+}
+.membot-left{
+    height: 122px;
+    width: 260px;
+    padding-left:90px;
+    border-right: 1px dashed #CCCCCC;
+    dt{
+        width: 84px;
+        height: 110px;
+        border: 2px solid #CCCCCC;
+    }
+    dd{
+        width: 156px;
+        height: 105px;
+        padding-left: 9px;
+        p{
+            line-height: 23px;
+            b{
+                color:#ED4552;
+            }
+        }
+        span a img{
+            padding-left: 40px;
+            padding-top:15px;
+        }
+    }
+}
+.membot-center{
+    width: 210px;
+    height: 122px;
+    padding: 0 5px;
+    border-right: 1px dashed #CCCCCC;
+    h4{
+        width: 210px;
+        height: 24px;
+        line-height: 24px;
+        border-bottom: 1px dashed #CCCCCC;
+    }
+    li{
+        line-height: 22px;
+    }
+}
+.membot-right{
+    width: 408px;
+    height: 120px;
+    dl{
+        width: 101px;
+        text-align: center;
+        height: 120px;
+        border-right: 1px dashed #CCCCCC;
+        dt img{
+            padding-left: 28px;
+        }
+        dd a{
+            font-size: 12px;
+            line-height: 19px;
+            font-weight: bold;
+        }
+    }
 }
 
 
