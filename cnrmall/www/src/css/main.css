@@ -486,4 +486,163 @@
   font-weight: bold;
 }
 
+.store {
+  height: 854px;
+  width: 100%;
+  margin-top: 10px;
+}
+.store .w {
+  height: 854px;
+}
+.store .w span {
+  display: block;
+  height: 33px;
+  line-height: 33px;
+  width: 785px;
+  padding-left: 215px;
+  border-top: 1px solid #000000;
+  background: url(../img/n_201422.jpg) no-repeat left;
+}
+.store .w .store-bot {
+  padding-top: 10px;
+  height: 810px;
+  padding-left: 10px;
+  width: 990px;
+  background: url(../img/n_44.jpg) repeat;
+}
+
+.stobot-top {
+  width: 990px;
+  height: 240px;
+}
+
+.storedetail {
+  height: 240px;
+  width: 600px;
+}
+.storedetail li {
+  display: none;
+}
+
+.storename {
+  width: 372px;
+  padding-right: 10px;
+  height: 240px;
+}
+.storename .stonahid {
+  height: 42px;
+  margin-top: 4px;
+  line-height: 42px;
+  text-align: center;
+  width: 372px;
+}
+
+.stonashow {
+  display: none;
+  width: 377px;
+  margin-right: 10px;
+  text-align: left;
+  height: 52px;
+  line-height: 52px;
+  border: 2px solid #e4e2e2;
+  background: url(../img/n_111.jpg) no-repeat 0 #FFFFFF;
+}
+.stonashow a {
+  padding-left: 25px;
+  font-size: 16px;
+  color: #f08389;
+  font-weight: bold;
+}
+
+.stobot-bot {
+  width: 990px;
+  height: 550px;
+}
+.stobot-bot li {
+  width: 320px;
+  height: 172px;
+  border: 1px solid #CCCCCC;
+  margin-top: 9px;
+  margin-right: 8px;
+  position: relative;
+}
+.stobot-bot li p a {
+  display: block;
+  padding-top: 10px;
+  width: 320px;
+  height: 40px;
+  color: #037fb3;
+  text-align: center;
+  line-height: 40px;
+}
+.stobot-bot li .lishadow {
+  display: none;
+  height: 176px;
+  width: 324px;
+  background-color: #000000;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  position: absolute;
+  top: -1px;
+  left: -1px;
+}
+
+.remind {
+  height: 153px;
+  margin: 10px auto;
+  background: url(../img/n_13.jpg) no-repeat center;
+}
+.remind .remind-left {
+  height: 140px;
+  width: 265px;
+  padding-left: 50px;
+}
+.remind .remind-left h3 {
+  width: 265px;
+  height: 35px;
+  line-height: 45px;
+}
+.remind .remind-left ul {
+  padding-left: 50px;
+  height: 105px;
+  width: 215px;
+}
+
+.remind-center {
+  width: 400px;
+  padding-left: 15px;
+  height: 140px;
+}
+.remind-center h3 {
+  width: 400px;
+  height: 35px;
+  line-height: 45px;
+}
+.remind-center h3 span {
+  color: #ED4552;
+}
+.remind-center dl {
+  width: 67px;
+  height: 90px;
+  padding-right: 10px;
+}
+.remind-center dl dt {
+  width: 67px;
+  height: 53px;
+}
+.remind-center dl dd a {
+  display: block;
+  width: 67px;
+  text-align: center;
+  height: 37px;
+  line-height: 37px;
+}
+
+.remind-right {
+  width: 224px;
+  height: 87px;
+  padding-right: 25px;
+  padding-top: 30px;
+}
+
 /*# sourceMappingURL=main.css.map */

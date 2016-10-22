@@ -5,6 +5,7 @@ $(function(){
 	})
 	
 	
+	
 	var len = $(".actban-small > li").length;
     var index = 0;  //图片序号
     var adTimer=null;
@@ -26,6 +27,8 @@ $(function(){
     }).trigger("mouseleave");
     
     
+    
+    
     function showImg(index) {
         var adHeight = $(".actban-big").height();
         $(".actban-big").stop(true, false).animate({
@@ -42,6 +45,38 @@ $(function(){
 		$(this).css("border","2px solid #ED4552").siblings().css("border","2px solid #f8f4f2");
 		$(".memtabtwo li").eq(count).css("display","block").siblings().css("display","none");
 	})
+	
+	
+	
+	
+	$(".stonahid").mouseover(function(){
+		var stoindex = $(".stonahid").index(this);
+		$(".storedetail li").eq(stoindex).css("display","block").siblings().css("display","none");
+		$(this).css("display","none").next(".stonashow").css("display","block");
+		$(this).siblings().css("display","block").next(".stonashow").css("display","none");
+	})
+	
+	
+
+	$(".ulshadow li").mouseover(function(){
+		var shaindex = $(".ulshadow li").index(this);
+		$(this).find(".lishadow").css("display","none").parent().siblings().find(".lishadow").css("display","block");
+	})
+	$(".ulshadow").mouseout(function(){
+		$(this).find(".lishadow").css("display","none");	
+	})
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	

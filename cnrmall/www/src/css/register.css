@@ -1,0 +1,103 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.cont{
+	height:485px;
+	border: 9px solid #e8e8e8;
+	margin-top:40px;
+	background: #FFFFFF;
+}
+.cont img{
+	padding:30px;
+}
+.cont .right{
+	width:342px;
+	padding-left: 60px;
+	height:460px;
+	padding-top:30px;
+}
+.right .textp{
+	width: 342px;
+	height:44px;
+	line-height: 12px;
+}
+form{
+	width: 360px;
+	height: 389px;
+}
+form span{
+	width: 17px;
+	height:37px;
+	background: url(../img/true.jpg) no-repeat left;
+	display: none;
+}
+.one{
+	width:340px;
+	border:1px solid #CCCCCC;
+	height: 37px;
+	line-height: 37px;
+}
+.checktxt,.txtbtn{
+	width:138px;
+	border:1px solid #CCCCCC;
+	height: 37px;
+	line-height: 37px;	
+}
+.txtbtn{
+	margin-left: 12px;
+	cursor: pointer;
+}
+.phonenum,.checknum,.paswdone,.paswdtwo{
+	width:342px;
+	height: 30px;
+	color: red;
+}
+
+.subbtn{
+	width: 341px;
+	height: 39px;
+	border: 0;
+	cursor: pointer;
+	background: url(../img/submit.jpg) no-repeat center;
+}
+
+
+
+
+
