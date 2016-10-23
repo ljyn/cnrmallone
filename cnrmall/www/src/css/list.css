@@ -1,0 +1,23 @@
+.storelogo{
+	height: 100px;
+	margin:10px auto;
+}
+.storeban{
+	height: 360px;
+}
+.storeban .ulone{
+	height: 360px;
+	width: 1200px;
+	overflow: hidden;
+}
+.history{
+	height: 259px;
+}
+.brandstory{
+	height:195px;
+}
+.brandstory p{
+	text-indent: 2em;
+	line-height: 24px;
+	height: 205px;
+}

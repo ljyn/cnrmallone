@@ -118,15 +118,15 @@ $(function(){
             $ul3.on("click", "li", function () {
                 $(this).addClass("native").siblings("li").removeClass("native");
                 var dg=$lous.eq($(this).index()).offset().top;
-                $("html").animate({scrollTop:dg});
+                $("html,body").animate({scrollTop:dg});
             })
 
             //totop
            var totop=$('.totop');
             $(window).on("scroll", function (){
                 var scr = $(window).scrollTop();
-                console.log(scr);
-                console.log($(".bottomone").offset().top);
+                //console.log(scr);
+                //console.log($(".bottomone").offset().top);
                 totop.animate({top:scr+200},10);
                 if(scr >= 200 && scr < $(".bottomone").offset().top-200){
                     totop.show(1000);
@@ -136,7 +136,7 @@ $(function(){
 
             })
             totop.on("click", function () {
-               $("html").animate({scrollTop:0});
+               $("html,body").animate({scrollTop:0});
             })
         },
         init:function(){

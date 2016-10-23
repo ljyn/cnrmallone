@@ -1,0 +1,112 @@
+.cont{
+	height:485px;
+	border: 9px solid #e8e8e8;
+	margin-top:40px;
+	background: #FFFFFF;
+}
+.cont img{
+	padding:30px;
+}
+.cont .right{
+	width:470x;
+	padding-left: 70px;
+	height:422px;
+	padding-top:30px;
+}
+.method{
+	width: 469px;
+	height: 46px;
+	border-left: 1px solid #CCCCCC;
+}
+.method li{
+	height:45px;
+	border-top: 1px solid #CCCCCC;
+	border-right: 1px solid #CCCCCC;
+	line-height: 45px;
+	padding:0 14px;
+}
+.on{
+	background-color:#f5f5f5;
+}
+.bot{
+	width: 468px;
+	height: 374px;
+	border: 1px solid #CCCCCC;
+	overflow: hidden;
+}
+.uesersname,.phoneway{
+	height: 343px;
+	width: 405px;
+	padding-left: 63px;
+	padding-top:31px;
+	
+}
+
+.uesersname .one{
+	width: 339px;
+	height: 37px;
+	line-height: 37px;
+	border: 1px solid #CCCCCC;
+	margin-bottom: 30px;
+}
+.phoneway .one{
+	width: 339px;
+	height: 37px;
+	line-height: 37px;
+	border: 1px solid #CCCCCC;
+	margin-bottom: 25px;
+}
+
+.loginbtn{
+	height: 39px;
+	width: 342px;
+	border: 0;
+	cursor: pointer;
+	margin-top: 15px;
+	background: url(../img/load.jpg) no-repeat center;
+}
+.uesersname .forget{
+	width: 112px;
+	padding-left: 230px;
+	height: 33px;
+	line-height: 33px;
+	border-bottom: 1px solid #CCCCCC;
+}
+.phoneway .forget{
+	width: 48px;
+	padding-left: 294px;
+	height: 33px;
+	line-height: 33px;
+	border-bottom: 1px solid #CCCCCC;
+}
+.bgcolor{
+	background-color: #f5f5f5;
+}
+.cooperate{
+	height: 24px;
+	line-height: 24px;
+	width: 342px;
+}
+.cooperateul{
+	width: 23px;
+	height: 342px;
+}
+.cooperateul li{
+	height: 23px;
+	width: 23px;
+}
+
+.cooperateul li img{
+	height: 23px;
+	width: 23px;
+	padding:0;
+}
+.getpsd{
+	width: 120px;
+	height: 23px;
+	line-height: 23px;
+	border:1px solid #CCCCCC;
+	margin-bottom: 12px;
+}
+
+

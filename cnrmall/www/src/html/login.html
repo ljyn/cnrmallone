@@ -1,10 +1,74 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="UTF-8">
 		<title>用户登录</title>
+		<link rel="stylesheet" type="text/css" href="../css/publictwo.css"/>
 		<link rel="stylesheet" href="../css/login.css" />
 	</head>
+
 	<body>
+
+		
+
+		<div class="w cont">
+			<img src="../img/sing-bg.jpg" class="l" />
+			<div class="l right">
+				<ul class="method">
+					<li class="l">用户名登录</li>
+					<li class="l bgcolor">手机快速登录</li>
+				</ul>
+				<div class="bot">
+					<form class="uesersname">
+						用户名/手机号<br />
+						<input type="text" style="background:url(../img/icon-1.jpg) no-repeat right;" class="one"/>
+						<br />
+						
+						密码<br />
+						<input type="password" style="background: url(../img/icon-2.jpg) no-repeat right;" class="one" /><br />
+						
+						<input type="checkbox" style="margin-left: 80px;"/>记住用户名
+						<input type="checkbox" style="margin-left: 40px;"/>自动登录<br />
+						
+						<input type="button" value="" class="loginbtn"/>
+						<br />
+						<p class="forget"><a>忘记密码</a>丨<a>免费注册</a></p>
+						<P class="cooperate">合作网站账户登录</P>
+						<ul class="cooperateul">
+							<li class="l"><a href="#"><img src="../img/QQ.jpg" /></a></li>
+						</ul>
+					</form>
+					
+					
+					
+					<form class="phoneway" style="display: none;">
+						用户名/手机号<br />
+						<input type="text" style="background:url(../img/icon-1.jpg) no-repeat right;" class="one"/>
+						<br />
+						<input type="button" value="获取动态密码" class="getpsd"/><br />
+						
+						密码<br />
+						<input type="password" style="background: url(../img/icon-2.jpg) no-repeat right;" class="one" /><br />
+						
+						
+						<input type="button" value="" class="loginbtn"/>
+						<br />
+						<p class="forget"><a>免费注册</a></p>
+						<P class="cooperate">合作网站账户登录</P>
+						<ul class="cooperateul">
+							<li class="l"><a href="#"><img src="../img/QQ.jpg" /></a></li>
+						</ul>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		
+
+		
 	</body>
+		<script src="../js/jquery-1.11.3.js"></script>
+		<script src="../js/login.js"></script>
+		<script src="../js/publictwo.js"></script>
 </html>
