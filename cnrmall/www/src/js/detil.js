@@ -129,9 +129,9 @@ $(function(){
                 //console.log($(".bottomone").offset().top);
                 totop.animate({top:scr+200},10);
                 if(scr >= 200 && scr < $(".bottomone").offset().top-200){
-                    totop.show(1000);
+                    totop.show();
                 } else {
-                    totop.hide(1000);
+                    totop.hide();
                 }
 
             })
