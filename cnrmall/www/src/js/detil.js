@@ -1,9 +1,5 @@
-/**
- * Created by asush on 2016/10/22.
- */
 $(function(){
     var tv={
-        // ajax函数
 
         eveBind:function(){
             //放大镜
@@ -144,4 +140,17 @@ $(function(){
         }
     }
     tv.init();
+    
+    
+    
+    
+	
+    $(".btn2").click(function(){
+
+    	$(this).append("<img class='flyto' src='../img/117443_4.jpg' />");  		$(this).find(".flyto").animate({"left":"170px","top":"-330px","width":0,"height":0},1000);
+    	$(".listnum").html($(".flyto").length);
+    });
+    
+
+    
 })

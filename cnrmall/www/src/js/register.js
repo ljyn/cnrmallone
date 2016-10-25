@@ -31,6 +31,7 @@ $(function(){
   		}else if($(this).val().match(/^1[3|4|5|8][0-9]{9}$/)){
   			$(".phonenum").html("");
   			$("span:eq(0)").css("display","block");
+  			
   		}else{
   			$(".phonenum").html("请输入正确的手机号码");
   			$("span:eq(0)").css("display","none");
@@ -82,11 +83,51 @@ $(function(){
   		}else if($(this).val()==$(".one:eq(1)").val()){
   			$(".paswdtwo").html("");
   			$("span:eq(2)").css("display","block");
+  			
   		}else{
   			$(".paswdtwo").html("两次密码不一致");
   			$("span:eq(2)").css("display","none");
   		}
   	});
+	
+	var arr=[];
+	$(".subbtn").bind("click",function(){	
+		
+		if($("span").css("display")=="block" && $(":checked").prop("checked")==true){
+			$phoneNum = $(".one:eq(0)").val();
+			$pasWd = $(".one:eq(1)").val();
+			$.cookie.raw = true;	
+			$.cookie.json = true;
+			
+			var jsonText = {"the_phoneNum": $phoneNum,"the_paw": $pasWd};
+			arr.push(jsonText);
+			$.cookie('user', arr, { expires: 7, path: '/' });
+			
+			
+			
+			
+			
+			$(".regsuccess").css("display","block");
+			var timer = null;
+			var count = 5;
+			timer = setInterval(function(){
+				if(count>0){
+					$(".jump").html(count--);
+				}else{
+					$(".regsuccess").css("display","none");
+					window.location.href = "login.html";
+				}				
+			},1000);
+			
+		}else{
+			$("this").prop("disabled",false);
+		}
+		
+		
+		
+		
+	})
+	
 	
 	
 	

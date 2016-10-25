@@ -23,6 +23,7 @@
 form{
 	width: 360px;
 	height: 389px;
+	position: relative;
 }
 form span{
 	width: 17px;
@@ -56,11 +57,25 @@ form span{
 	width: 341px;
 	height: 39px;
 	border: 0;
-	cursor: pointer;
 	background: url(../img/submit.jpg) no-repeat center;
 }
-
-
+.regsuccess{
+	display: none;
+	position: absolute;
+	top:150px;
+	left:-210px;
+	height: 50px;
+	width: 200px;
+	padding:30px;
+	background-color: #B9DEF0;
+}
+.regsuccess p{
+	text-align: center;
+	line-height: 25px;
+	font-size: 16px;
+	width: 200px;
+	color: red;
+}
 
 
 

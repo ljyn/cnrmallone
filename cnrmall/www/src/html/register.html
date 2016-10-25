@@ -26,11 +26,14 @@
 					<p class="paswdone"></p>
 					<input type="password" style="background: url(../img/icon-2.jpg) no-repeat right;" placeholder="请确认密码" class="one" /><span class="r"></span>
 					<p class="paswdtwo"></p>
-					<input type="checkbox" />我已阅读并接受
+					<label><input type="checkbox" class="agree" />我已阅读并接受</label>
 					<a href="#" style="color:#ED4552">《央广购物网络服务使用条款》</a>
 					<br /><br />
-					<input type="submit" class="subbtn" value="">
-
+					<input type="button" class="subbtn" value=""/>
+					<div class="regsuccess">
+						<p>恭喜你，注册成功！</p>
+						<p>页面将在&nbsp;<em class="jump">5</em>&nbsp;秒后跳转</p>
+					</div>
 				</form>
 				
 			</div>
@@ -41,6 +44,7 @@
 		
 	</body>
 		<script src="../js/jquery-1.11.3.js"></script>
+		<script src="../js/jquery.cookie.js"></script>
 		<script src="../js/publictwo.js"></script>
 		<script src="../js/register.js"></script>
 </html>

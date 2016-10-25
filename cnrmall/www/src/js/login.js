@@ -4,4 +4,14 @@ $(function(){
 		$(this).removeClass("bgcolor").siblings().addClass("bgcolor");
 		$("form").eq(methindex).css("display","block").siblings().css("display","none");
 	});
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 })

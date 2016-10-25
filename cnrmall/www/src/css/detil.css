@@ -518,6 +518,26 @@
 }
 .tit2 .div3 .btn2 {
   margin-left: 15px;
+  position: relative;
+}
+.listnum{
+	position: absolute;
+	top:-340px;
+	left:230px;
+	text-align: center;
+	line-height: 19px;
+	color: #FFFFFF;
+	height: 19px;
+	width: 17px;
+	background: url(../img/num.jpg) no-repeat center;
+}
+.tit2 .div3 .btn2 .flyto{
+	display: block;
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	top:0;   
+	left:40px;
 }
 .tit2 .div4 {
   width: 390px;
