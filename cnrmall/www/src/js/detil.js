@@ -3,7 +3,7 @@ $(function(){
 
         eveBind:function(){
             //放大镜
-            $(".jqzoom").imagezoom({xzoom:350,yzoom:350});
+            $(".jqzoom").imagezoom({xzoom:300,yzoom:200});
 
             // 获取页面的主要元素
             var $focus = $('#focus');
@@ -144,13 +144,27 @@ $(function(){
     
     
     
-	
-    $(".btn2").click(function(){
-
-    	$(this).append("<img class='flyto' src='../img/117443_4.jpg' />");  		$(this).find(".flyto").animate({"left":"170px","top":"-330px","width":0,"height":0},1000);
+	var arr= [];
+    $(".btn2").bind("click",function(){
+		var oLength = $(".sp2").html();
+		for(var i=0;i<oLength;i++){
+			$(".btn2").append("<img class='flyto' src='../img/117443_4.jpg' />");  
+		}
+		$(this).find(".flyto").animate({"left":"170px","top":"-330px","width":0,"height":0},1000);
     	$(".listnum").html($(".flyto").length);
+    	
+   	
+    	
+    	$descript = $(".goodsname").html();
+    	$price = $(".goodsprice").html();
+    	$goodsnum = $(".sp2").html();
+		$.cookie.raw = true;
+    	$.cookie.json = true;
+    	
+    	var jsonText = {"the_dsc": $descript,"the_count": $goodsnum,"the_price": $price};
+        arr.push(jsonText);
+    	$.cookie("car", arr, { expires: 7, path: "/" });
+   	
     });
-    
 
-    
 })

@@ -64,14 +64,14 @@ td{
 	margin-left:20px;
 	width:950px;
 }
-.menoy{
+.money{
 	height: 70px;
 	line-height: 70px;
 	width: 200px;
 	padding-left:750px;
 	font-weight: bold;
 }
-.menoy span{
+.money span{
 	color: red;
 	font-size: 17px;
 }
