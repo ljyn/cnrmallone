@@ -49,7 +49,7 @@ $(function(){
         if(j>=2){
             j=0;
         }
-    },2000)
+    },3000)
 
 
     //正在热卖
@@ -112,6 +112,14 @@ $(function(){
 		$(this).css("border","2px solid #ED4552").siblings().css("border","2px solid #f8f4f2");
 		$(".memtabtwo li").eq(count).css("display","block").siblings().css("display","none");
 	})
+
+
+
+
+
+    $(".updown li").mouseover(function(){
+        $(this).stop().animate({height:"50px"},500).siblings().stop().animate({height:"20px"},500);
+    })
 	
 	
 	

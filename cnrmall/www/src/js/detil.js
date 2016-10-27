@@ -103,7 +103,7 @@ $(function(){
             var share=$('.share');
             add.on('mouseover',function(){
                 share.css({'display':'block'});
-            }).on('mouseout',function(){
+            }).on('click',function(){
                 share.css({'display':'none'});
             })
 
@@ -140,31 +140,46 @@ $(function(){
         }
     }
     tv.init();
-    
-    
-    
-    
-	var arr= [];
+
+
+
+
+    $.cookie.raw = true;
+    $.cookie.json = true;
+    var arr= [{"the_dsc":"三光云彩玻璃保鲜盒特惠组","the_count": 1,"the_price": 200.00},{"the_dsc":"三光云彩钢化玻璃保鲜10件套","the_count": 1,"the_price": 298.00}];
+    $.cookie("car", arr, { expires: 7, path: "/" });
+
     $(".btn2").bind("click",function(){
-		var oLength = $(".sp2").html();
-		for(var i=0;i<oLength;i++){
-			$(".btn2").append("<img class='flyto' src='../img/117443_4.jpg' />");  
-		}
-		$(this).find(".flyto").animate({"left":"170px","top":"-330px","width":0,"height":0},1000);
-    	$(".listnum").html($(".flyto").length);
-    	
-   	
-    	
-    	$descript = $(".goodsname").html();
-    	$price = $(".goodsprice").html();
-    	$goodsnum = $(".sp2").html();
-		$.cookie.raw = true;
-    	$.cookie.json = true;
-    	
-    	var jsonText = {"the_dsc": $descript,"the_count": $goodsnum,"the_price": $price};
-        arr.push(jsonText);
-    	$.cookie("car", arr, { expires: 7, path: "/" });
-   	
+        var oLength = $(".sp2").html();
+        for(var i=0;i<oLength;i++){
+            $(".btn2").append("<img class='flyto' src='../img/117443_4.jpg' />");
+        }
+        $(this).find(".flyto").animate({"left":"170px","top":"-330px","width":0,"height":0},1000);
+        $(".listnum").html($(".flyto").length+2);
+
+
+
+        $descript = $(".goodsname").html();
+        $price = $(".goodsprice").html();
+        $goodsnum = $(".sp2").html();
+        $.cookie.raw = true;
+        $.cookie.json = true;
+        var jsonText = {"the_dsc": $descript,"the_count": $goodsnum,"the_price": $price};
+        for(var i = 0;i<arr.length;i++){
+
+            if((arr[i].the_dsc) == (jsonText.the_dsc)){
+                //console.log(arr[i].the_dsc);
+               // console.log(arr[i].the_count);
+               // console.log(jsonText.the_dsc);
+                arr[i].the_count = Number(arr[i].the_count) + Number(jsonText.the_count);
+                break;
+            }else if(i>=arr.length){
+                arr.push(jsonText);
+            }
+        }
+        $.cookie("car", arr, { expires: 7, path: "/" });
+
     });
+
 
 })

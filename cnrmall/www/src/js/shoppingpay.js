@@ -2,8 +2,15 @@ $(function(){
 	$.cookie.raw = true;
 	$.cookie.json = true;
 	$obj = $.cookie("car");
-	console.log($obj);
-
+	//console.log($obj);
+	function change(obj){
+		var price = 0;
+		for(var i = 0;i<obj.length;i++){
+			price += $obj[i].the_price * $obj[i].the_count;
+			$(".money span").html("￥"+price);
+		}
+	}
+	var price = 0;
 	for(var i=0;i<$obj.length;i++){
 		//console.log($obj[i]);
 
@@ -21,87 +28,65 @@ $(function(){
 			"</tr>"
 		);
 		$(".totalnum").eq(i).html($obj[i].the_count);
-		console.log($obj[i].the_count);
-
-		var count = $obj[i].the_count;
-		var _i = i;
-		$(".down").on("click",function(){
-			var ind=$(this).parent().parent().index();
-			console.log(ind);
-		})
-		//$(".down").eq(i).bind("click",function(){
-		//	count--;
-		//	if(count<=0){
-		//		alert("不能再减了");
-		//		count = 1;
-		//	}
-		//	$(".totalnum").eq(i).html(count);
-        //
-		//});
-		$(".up").eq(i).bind("click",function(){
-			count++;
-			if(count>10){
-				alert("最多十件");
-				count = 10;
-			}
-			$(".totalnum").eq(_i).html(count);
-		});
-
-
-		/*
-		$(".up").eq(i).bind("click",function(){
-			$obj[i].the_count++;
-			if($obj[i].the_count > 10){
-				alert("最多十件");
-				$obj[i].the_count = 10
-			}
-			$(".totalnum").eq(i).html($obj[i].the_count);
-		});
-		*/
-
-
-
-		/*
-		var price = $obj.the_price;
-		$(".money span").html("￥"+price*$obj[i].the_count);
-
-		$(".delete").eq(i).click(function(){
-			$(this).parent().parent().remove();
-		});
-		*/
+		price += $obj[i].the_price * $obj[i].the_count;
+		$(".money span").html("￥"+price);
 	}
-	$(".del").click(function(){
-		$("tr:not(:first)").remove();
-	});
-/*
-	$(".totalnum").html($obj.the_count);
-	$(".down").bind("click",function(){
-		$obj.the_count--;
-		if($obj.the_count<=0){
-			alert("不能再减了");
-			$obj[0].the_count = 1;
-		}
-		$(".totalnum").html($obj.the_count);
-	});
-	$(".up").bind("click",function(){
-		$obj.the_count++;
-		if($obj.the_count > 10){
-			alert("最多十件");
-			$obj.the_count = 10
-		}
-		$(".totalnum").html($obj.the_count);
-	});
-	var price = $obj.the_price;
-	$(".money span").html("￥"+price*$obj.the_count);
 
-	$(".delete").click(function(){
+	$(".delete").on("click",function(){
+		var i = $(".delete").index(this);
+		//console.log(i);
 		$(this).parent().parent().remove();
+		var arr = $obj.splice(i,1);
+		$.cookie("car", $obj, { expires: 7, path: "/" });
+		//change($obj);
+		window.location.reload();
 	});
-	$(".del").click(function(){
+
+
+	$(".down").on("click",function(){
+		var ind=$(this).parent().parent().index();
+		//console.log(ind);
+		var count = $(".totalnum").eq(ind-1).html();
+		//console.log(count);
+		count--;
+		if(count<=0){
+			alert("不能再减了");
+			count = 1;
+		}
+		$(".totalnum").eq(ind-1).html(count);
+		$obj[ind-1].the_count = count;
+		//console.log($obj[ind-1].the_count);
+		$.cookie("car", $obj, { expires: 7, path: "/" });
+		//price += $obj[i].the_price * $obj[i].the_count;
+		//$(".money span").html("￥"+price);
+		change($obj);
+		//window.location.reload();
+	});
+
+
+	$(".up").bind("click",function(){
+		var ind=$(this).parent().parent().index();
+		var count = $(".totalnum").eq(ind-1).html();
+		count++;
+		if(count>10){
+			alert("最多十件");
+			count = 10;
+		}
+		$(".totalnum").eq(ind-1).html(count);
+		$obj[ind-1].the_count = count;
+		//console.log($obj[ind-1].the_count);
+		$.cookie("car", $obj, { expires: 7, path: "/" });
+		change($obj);
+		//window.location.reload();
+	});
+
+	$(".del").on("click",function(){
 		$("tr:not(:first)").remove();
+		var num = $obj.length;
+		//console.log(num);
+		$obj.splice(0,num);
+		$.cookie("car", $obj, { expires: 7, path: "/" });
+		window.location.reload();
 	});
-	*/
-
-
 
 })
